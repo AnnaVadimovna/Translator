@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_translate"
+        android:title="@string/translator"
+        android:icon="@drawable/ic_translate_black_24dp" />
+    <item android:id="@+id/action_favorites"
+        android:title="@string/favorites"
+        android:icon="@drawable/ic_bookmark_border_black_24dp" />
+    <item android:id="@+id/action_history"
+        android:title="@string/histoty"
+        android:icon="@drawable/ic_history_black_24dp" />
+</menu>

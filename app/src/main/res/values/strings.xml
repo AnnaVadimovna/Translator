@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Translator</string>
+    <string name="title_activity_translator">TranslatorActivity</string>
+    <string name="title_activity_translation_list">TranslationListActivity</string>
+    <string name="translator">Переводчик</string>
+    <string name="favorites">Избраное</string>
+    <string name="histoty">Переводы</string>
+    <string name="settings">Настройки</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lang_selector">Выбор языка</string>
+    <string name="servis">Переведено сервисом "Яндекс.Переводчик" http://translate.yandex.ru/</string>
+</resources>

@@ -1,0 +1,32 @@
+buildscript {
+    ext {
+        android_gradle_plugin_version = "2.3.1"
+        compile_sdk_version = 25
+        build_tools_version = "25.0.2"
+        min_sdk_version = 16
+        target_sdk_version = 25
+        version_code = 1
+        version_name = "1.0"
+        espresso_version = "2.2.2"
+        android_support_version = "25.3.1"
+        android_constraint_version = "1.0.0-beta4"
+        junit_version = "4.12"
+        moxy_version = "1.4.6"
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$android_gradle_plugin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

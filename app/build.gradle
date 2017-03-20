@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion compile_sdk_version
+    buildToolsVersion build_tools_version
+    defaultConfig {
+        applicationId "av.translator"
+        minSdkVersion min_sdk_version
+        targetSdkVersion target_sdk_version
+        versionCode version_code
+        versionName version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espresso_version", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$android_support_version"
+    compile "com.android.support.constraint:constraint-layout:$android_constraint_version"
+    testCompile "junit:junit:$junit_version"
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile "com.android.support:design:$android_support_version"
+    compile "com.android.support:support-v4:$android_support_version"
+    compile "com.android.support:recyclerview-v7:$android_support_version"
+    compile "com.arello-mobile:moxy:$moxy_version"
+    compile "com.arello-mobile:moxy-android:$moxy_version"
+    provided "com.arello-mobile:moxy-compiler:$moxy_version"
+    compile "com.arello-mobile:moxy-app-compat:$moxy_version"
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile "com.j256.ormlite:ormlite-android:5.0"
+}
